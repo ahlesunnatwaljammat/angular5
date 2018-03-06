@@ -1,19 +1,2 @@
 /* You can add global styles to this file, and also import other style files */
-@import "../../node_modules/@angular/material/prebuilt-themes/indigo-pink.css";
-
-.mycss{
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.example-container {
-  display: flex;
-  flex-direction: column;
-  max-height: 500px;
-  min-width: 300px;
-}
-
-.mat-table {
-  overflow: auto;
-  max-height: 500px;
-}
+@import "../../node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css";
