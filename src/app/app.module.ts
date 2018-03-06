@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
   MatButtonModule, MatCardModule, MatTableModule, MatMenuModule, MatPaginatorModule, MatSortModule,
-  MatProgressSpinnerModule
+  MatProgressSpinnerModule, MatProgressBarModule
 } from '@angular/material';
 
 
@@ -31,7 +31,9 @@ import {InfiniteScrollModule} from 'ngx-infinite-scroll';
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
-    MatButtonModule, MatMenuModule, MatCardModule, MatTableModule, MatPaginatorModule, MatSortModule, MatProgressSpinnerModule,
+    MatButtonModule, MatMenuModule, MatCardModule,
+    MatTableModule, MatPaginatorModule, MatSortModule,
+    MatProgressSpinnerModule, MatProgressBarModule,
     InfiniteScrollModule,
     HttpClientModule
   ],
