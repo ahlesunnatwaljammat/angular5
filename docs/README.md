@@ -40,3 +40,12 @@ Open app.component.html and add the following:
 <pre>
 <button mat-button>Click me!</button>
 </pre>
+
+#### Routing 
+ng g m components/wiki --routing
+Add WikiModule in app.modules.ts
+
+ng g c components/wiki/wiki-home -is
+
+To deploy on nginx
+ng build --prod --base-href=./

@@ -1,13 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-login',
-  template: `
-    <p>Login</p>
-  `,
+  selector: 'app-wiki-home',
+  templateUrl: './wiki-home.component.html',
   styles: []
 })
-export class LoginComponent implements OnInit {
+export class WikiHomeComponent implements OnInit {
 
   constructor() { }
 

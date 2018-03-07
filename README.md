@@ -1,27 +1,51 @@
-# AngularPOC
+# Angular 5, Angular Material, Infinite Scroll
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.2.
+This project is demonstrating angular 5, angular material and infinite scroll
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### Angular 5
 
-## Code scaffolding
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Open cmd with Administrator and install angular cli by executing the following command
 
-## Build
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+npm install -g @angular/cli@latest
+Once completed with angular cli installation now create the angular application by executing following command
 
-## Running unit tests
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ng new appplication_name
+It will take some time to download the dependencies for angular application, Once you done then type the following
 
-## Running end-to-end tests
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+cd application_name
+Type ng serve to start the application by default it will use localhost:4200 but you can configure hostname and port, –host and –port are the parameters of ng serve
 
-## Further help
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+e.g. ng serve –host=noman –port=8001
+Open chrome and type http://noman:8001
 
-## Added angular material
+#### Add angular material into angular project
 Install [Angular Material](https://material.angular.io/guide/getting-started) 
 <ul>
 <li>npm install –save @angular/material @angular/cdk</li>
 <li>npm install –save @angular/animations</li>
 </ul>
+
+Once you are done with installation open app.module.ts file and add the following:
+
+import {BrowserAnimationsModule} from ‘@angular/platform-browser/animations’;
+
+<pre>
+imports: [
+  MatButtonModule,
+  BrowserAnimationsModule
+]
+</pre>
+
+Open app.component.html and add the following:
+<pre>
+<button mat-button>Click me!</button>
+</pre>
+
+#### Routing 
+ng g m components/wiki --routing
+Add WikiModule in app.modules.ts
+
+ng g c components/wiki/wiki-home -is
+
+To deploy on nginx
+ng build --prod --base-href=./

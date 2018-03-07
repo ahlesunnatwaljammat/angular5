@@ -3,12 +3,21 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-header',
   template: `
-    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item [routerLink]="['/login']">Login</button>
-      <button mat-menu-item [routerLink]="['/lazy-demo-1']">Lazy Demo 1</button>
-      <button mat-menu-item [routerLink]="['/lazy-demo-2']">Lazy Demo 2</button>
-    </mat-menu>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <span>Angular Material</span>
+        <div style="text-align: right; width: 100%;">
+        <a mat-button [matMenuTriggerFor]="menu">Demos</a>
+        <mat-menu #menu="matMenu">
+          <a mat-menu-item [routerLink]="['/login']">Login</a>
+          <a mat-menu-item [routerLink]="['/lazy-demo-1']">Lazy Demo 1</a>
+          <a mat-menu-item [routerLink]="['/lazy-demo-2']">Lazy Demo 2</a>
+          <a mat-menu-item [routerLink]="['/data-table']">Data Table Demo</a>
+          <a mat-menu-item [routerLink]="['/wiki/wiki-home']">Wiki Home</a>
+        </mat-menu>
+        </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
   `,
   styles: []
 })
