@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {WikiHomeComponent} from './wiki-home/wiki-home.component';
+import {WikiListComponent} from './wiki-list/wiki-list.component';
 
 const routes: Routes = [
-  { path: 'wiki/wiki-home', component: WikiHomeComponent
+  {
+    path: '', component: WikiListComponent
+  }, {
+    path: 'list', component: WikiListComponent
   }
 ];
 

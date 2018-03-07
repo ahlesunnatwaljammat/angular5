@@ -11,12 +11,11 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { LazyTable1Component } from './components/lazy-table-1/lazy-table-1.component';
 import { HeaderComponent } from './components/header/header.component';
-import {AppRoutingModule} from './app-routing/app-routing.module';
+import {AppRoutingModule} from './app-routing.module';
 import { LazyTable2Component } from './components/lazy-table-2/lazy-table-2.component';
 import {HttpClientModule} from '@angular/common/http';
 import {InfiniteScrollModule} from 'ngx-infinite-scroll';
 import { EditTableComponent } from './components/edit-table/edit-table.component';
-import {WikiModule} from './components/wiki/wiki.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +28,6 @@ import {WikiModule} from './components/wiki/wiki.module';
   ],
   imports: [
     AppRoutingModule,
-    WikiModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule, MatInputModule, MatMenuModule, MatCardModule, MatToolbarModule, MatDividerModule, MatFormFieldModule,

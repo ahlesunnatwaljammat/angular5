@@ -9,7 +9,10 @@ Open cmd with Administrator and install angular cli by executing the following c
 npm install -g @angular/cli@latest
 Once completed with angular cli installation now create the angular application by executing following command
 
-ng new appplication_name
+ng new appplication_name --routing
+<ul>
+<li>--routing will generate a default route</li>
+</ul>
 It will take some time to download the dependencies for angular application, Once you done then type the following
 
 cd application_name
@@ -41,11 +44,16 @@ Open app.component.html and add the following:
 <button mat-button>Click me!</button>
 </pre>
 
-#### Routing 
+#### Routing
+<pre> 
 ng g m components/wiki --routing
+</pre>
+
 Add WikiModule in app.modules.ts
 
+<pre>
 ng g c components/wiki/wiki-home -is
+</pre>
 
 To deploy on nginx
 ng build --prod --base-href=./

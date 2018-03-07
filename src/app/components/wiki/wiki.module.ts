@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { WikiRoutingModule } from './wiki-routing.module';
-import { WikiHomeComponent } from './wiki-home/wiki-home.component';
+import { WikiListComponent } from './wiki-list/wiki-list.component';
 
 @NgModule({
   imports: [
+    CommonModule,
     WikiRoutingModule
   ],
-  declarations: [WikiHomeComponent]
+  declarations: [WikiListComponent]
 })
 export class WikiModule { }
