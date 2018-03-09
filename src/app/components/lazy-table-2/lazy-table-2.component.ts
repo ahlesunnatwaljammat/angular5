@@ -76,7 +76,7 @@ export class LazyTable2Component implements OnInit, AfterViewInit {
       }
 
       this.subject.next(this.issueArray);
-    }, 2000);
+    }, 500);
 
   }
 }

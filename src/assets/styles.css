@@ -24,13 +24,6 @@
   position: relative;
 }
 
-.example-header {
-  min-height: 64px;
-  display: flex;
-  align-items: center;
-  padding-left: 24px;
-  font-size: 20px;
-}
 
 .example-table {
   overflow: auto;

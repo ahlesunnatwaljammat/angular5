@@ -1,10 +1,23 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-describe('AppComponent', () => {
+import {MatCardModule, MatDivider, MatDividerModule, MatMenuModule, MatToolbarModule} from '@angular/material';
+import {HeaderComponent} from './components/header/header.component';
+import {RouterModule} from '@angular/router';
+import {RouterTestingModule} from '@angular/router/testing';
+
+fdescribe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        HeaderComponent
+      ],
+      imports: [
+        MatDividerModule,
+        MatCardModule,
+        MatMenuModule,
+        MatToolbarModule,
+        RouterTestingModule
       ],
     }).compileComponents();
   }));
